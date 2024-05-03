@@ -157,9 +157,25 @@ body {
     display: block;
     height: 2px;
     width: 100px;
-    background: var(--primaryColor);
+    background: #adadad;
     margin: auto;
     border-radius: 10px;
+    position: relative;
+    
+}
+.stitle span::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: var(--primaryColor);
+    transition: .4s all ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+.stitle:hover span::after{
+    width: 100%;
 }
 
 .stitle p {
@@ -569,3 +585,10 @@ color: #fff;
     color: #fff;
 }
 /* contact us section end here  */
+
+@media(max-width: 768px){
+    .stitle h1 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
