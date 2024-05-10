@@ -764,5 +764,9 @@ margin-bottom: 20px;
     
 margin-bottom: 10px;
 }
-
+.navbar-toggler {
+    border: none;
+    box-shadow: none !important;
+    outline: 0 !important;
+}
 /* ============ projects gallary part end here =============  */
