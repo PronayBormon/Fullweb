@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&amp;display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-body {
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&amp;display=swap"); @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); body {
     /* font-family: merriweather, sans-serif; */
     font-family: "Montserrat", sans-serif;
 }
@@ -16,7 +13,8 @@ body {
     --secondaryColor: #ebaa49;
 }
 
-.slider_section {}
+.slider_section {
+}
 
 .sliderBox {
     height: 85vh;
@@ -85,9 +83,11 @@ body {
     margin: 0px;
 }
 
-.features {}
+.features {
+}
 
-.content_title {}
+.content_title {
+}
 
 .content_title h1 {
     font-size: 30px;
@@ -118,7 +118,8 @@ body {
     font-weight: 700;
 }
 
-.features ul li p {}
+.features ul li p {
+}
 
 .features span {
     display: block;
@@ -161,9 +162,9 @@ body {
     margin: auto;
     border-radius: 10px;
     position: relative;
-    
 }
-.stitle span::after{
+
+.stitle span::after {
     position: absolute;
     content: '';
     width: 0%;
@@ -174,7 +175,8 @@ body {
     transform: translateX(-50%);
     top: 0;
 }
-.stitle:hover span::after{
+
+.stitle:hover span::after {
     width: 100%;
 }
 
@@ -300,11 +302,14 @@ body {
     border-top: 1px solid rgba(25, 162, 72, 0.12);
 }
 
-.footer_top ul {}
+.footer_top ul {
+}
 
-.footer_top ul li {}
+.footer_top ul li {
+}
 
-.footer_top ul li a {}
+.footer_top ul li a {
+}
 
 .footer_top ul li a i {
     font-size: 25px;
@@ -338,7 +343,8 @@ body {
     background-color: rgb(16, 15, 15);
 }
 
-.qcLink ul li {}
+.qcLink ul li {
+}
 
 .qcLink ul {
     list-style: none;
@@ -412,7 +418,8 @@ a:hover {
     margin: 10px 0px;
 }
 
-.sliderBox {}
+.sliderBox {
+}
 
 .sliderBox h1 {
     color: rgb(255, 255, 255);
@@ -434,7 +441,7 @@ a:hover {
 }
 
 .title_barchard {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     height: 200px;
@@ -449,6 +456,7 @@ a:hover {
     display: flex;
     padding: 0px;
     margin: 0px;
+    justify-content: end;
 }
 
 .title_barchard ul li {
@@ -516,9 +524,11 @@ a:hover {
     padding: 30px 0px;
 }
 
-.about_left {}
+.about_left {
+}
 
-.about_left h6 {}
+.about_left h6 {
+}
 
 .about_left h1 {
     font-family: "Montserrat", sans-serif;
@@ -549,46 +559,210 @@ a:hover {
     position: relative;
 }
 
-.about_box span::after{
+.about_box span::after {
     position: absolute;
     content: '';
     height: 100%;
     width: 10%;
-    left:  0;
+    left: 0;
     top: 0;
     background-color: var(--primaryColor);
     transition: .4s all ease-in-out;
 }
+
 .about_box p {
     font-family: "Montserrat", sans-serif;
 }
 
-.about_box:hover  span::after{
+.about_box:hover span::after {
     width: 100%;
 }
 
 /* contact us section start here  */
-.contact_us{
-
-margin-top: 30px;
-
-background: var(--primaryColor);
+.contact_us {
+    margin-top: 30px;
+    background: var(--primaryColor);
 }
-.contact_us  p{
 
-color: #fff;
-}
-.contact_us  input{
-    
-}
-.contact_us .stitle h1{
+.contact_us p {
     color: #fff;
 }
-/* contact us section end here  */
 
-@media(max-width: 768px){
+.contact_us input {
+}
+
+.contact_us .stitle h1 {
+    color: #fff;
+}
+
+/* contact us section end here  */
+@media(max-width: 768px) {
     .stitle h1 {
         font-size: 20px;
         font-weight: 700;
     }
 }
+
+/* ============ project gallayr part start here =========  */
+.project_gallary {
+    padding: 30px 0px;
+}
+
+.project_container {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    gap: 10px;
+}
+
+.project_grid {
+    position: relative;
+    z-index: 0;
+    /* box-shadow: 2px 2px 5px 3px #0000001c; */
+    border: 1px solid #e1e1e1;
+}
+
+.project_grid::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #1d0b49bf;
+    z-index: 0;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.project_grid:hover:after {
+    opacity: 1;
+}
+
+.project_grid img {
+}
+
+.project_grid h1 {
+    position: absolute;
+    z-index: 2;
+    top: 60%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondaryColor);
+    filter: drop-shadow(2px 4px 6px black);
+    transition: .4s all ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+    /* display: -webkit-box; */
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin: auto;
+}
+
+.project_grid:hover h1 {
+    top: 50%;
+    opacity: 1;
+}
+
+@media(max-width: 992px) {
+    .project_container {
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+    }
+
+    .project_grid h1 {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 768px) {
+    .project_container {
+        display: grid;
+        grid-template-columns: repeat(2, 4fr);
+    }
+}
+
+.proj_filter {
+    margin-bottom: 10px;
+}
+
+.proj_filter button {
+}
+
+.proj_filter .btn {
+    margin: 8px 2px;
+    border-radius: 3px;
+    background: #7b6e99;
+    border: none;
+    box-shadow: 0 0 10px #0006;
+}
+
+.proj_filter .btn:active,.proj_filter .btn:hover {
+    background: var(--primaryColor);
+}
+
+.proj_filter .btn-primary {
+}
+
+.proj_filter .btn-primary.active {
+    background: var(--primaryColor);
+}
+
+@media(max-width: 768px) {
+    .proj_filter .btn {
+        font-size: 12px;
+    }
+    .title_barchard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    .topBarcard {
+        min-height: auto;
+    }
+    .consult_ h1 {
+        font-size: 25px;
+    }
+    .title_barchard ul li {
+        font-size: 14px;
+    }
+    .title_barchard h1 {
+        font-size: 25px;
+    }
+    .title_barchard ul {
+        justify-content: start;
+    }
+    footer p{
+        font-size: 12px;
+    }
+}
+
+.single_projects{
+
+padding: 30px;
+}
+.project_image{
+
+margin-bottom: 20px;
+}
+.project_image img{
+
+}
+.project_description{
+
+}
+.project_description h1{
+
+}
+.project_description p{
+    
+margin-bottom: 10px;
+}
+
+/* ============ projects gallary part end here =============  */
