@@ -978,3 +978,11 @@ a:hover {
 .nav-link {
     font-weight: 600 !important;
 }
+.service_box li{
+    text-align: start;
+}
+.product-image {
+    height: 110px;
+    width: 110px;
+    object-fit: cover;
+}
