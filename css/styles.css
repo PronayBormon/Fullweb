@@ -975,3 +975,6 @@ a:hover {
 .social a{
     margin: 3px 5px;
 }
+.nav-link {
+    font-weight: 600 !important;
+}
