@@ -63,7 +63,7 @@
                         <a class="nav-link" href="offers.html">Offers</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="notice.html">Notice</a>
+                        <a class="nav-link" href="notice.html">Notice</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="gallery.html">Gallary</a>
@@ -84,14 +84,14 @@
                     <div class="title_barchard ">
                         <div class="row h-100 align-items-center">
                             <div class="col-md-6">
-                                <h1 class="animate__animated  animate__fadeIn">Offers</h1>
+                                <h1 class="animate__animated  animate__fadeIn">Gallary</h1>
                             </div>
                             <div class="col-md-6">
                                 <div>
                                     <ul>
                                         <li class="animate__animated  animate__fadeIn"><a href="index.html">Home
                                                 &#x276F; &#x276F; </a></li>
-                                        <li class="animate__animated  animate__fadeIn">Offers</li>
+                                        <li class="animate__animated  animate__fadeIn">Gallary</li>
                                     </ul>
                                 </div>
                             </div>
@@ -102,54 +102,56 @@
         </div>
     </section>
 
-    <!-- offers section start here  -->
-    <section class="offers_sec">
+    <!-- projects gallary start here  -->
+    <section class="project_gallary">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="offers_container">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                                <div class="offer_box">
-                                    <img src="images/offer1.png" alt="" class="img-fluid">
-                                    <h1>Lorem ipsum dolor sit amet.</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, atque pariatur quae
-                                        quasi ratione corrupti quibusdam sunt? Dolores, nemo deleniti!</p>
-                                    <a href="offer_single.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                                <div class="offer_box">
-                                    <img src="images/offer2.png" alt="" class="img-fluid">
-                                    <h1>Lorem ipsum dolor sit amet.</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, atque pariatur quae
-                                        quasi ratione corrupti quibusdam sunt? Dolores, nemo deleniti!</p>
-                                    <a href="offer_single.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                                <div class="offer_box">
-                                    <img src="images/offer3.png" alt="" class="img-fluid">
-                                    <h1>Lorem ipsum dolor sit amet.</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, atque pariatur quae
-                                        quasi ratione corrupti quibusdam sunt? Dolores, nemo deleniti!</p>
-                                    <a href="offer_single.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 m-auto">
-                                <div class="proj_filter text-center my-5">
-                                    <button type="button" class="btn btn-primary active">Load more</button>
-                                </div>
-                            </div>
+                <div class="col-md-6 m-auto">
+                    <div class="stitle">
+                        <!-- <p>OUR SERVICE</p> -->
+                        <h1 class="animate__animated  animate__fadeIn">Image Gallary </h1>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row  animate__animated  animate__fadeIn">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="notice_container">
+                        <div class="notice_box">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#detailsmodal">
+                                <img src="images/about.jpg" class="img-fluid" alt="">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-md-6 m-auto">
+                    <div class="proj_filter text-center my-5">
+                        <button type="button" class="btn btn-primary active">Load more</button>
+                    </div>
+                </div>
+            </div>
     </section>
-    <!-- offers section end here  -->
+    <!-- projects gallary end here  -->
+
+    <!-- details modal start here  -->
+    <div class="modal fade" id="detailsmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-0">
+                <div class="modal-header py-1">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Image</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/about.jpg" alt="notice" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- footer links  -->
     <section class="footer_top py-5">
@@ -224,6 +226,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script> <!--Bootstrap-->
+
 
 </body>
 
