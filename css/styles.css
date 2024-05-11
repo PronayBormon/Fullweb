@@ -969,3 +969,9 @@ a:hover {
 
     margin-top: 8px;
 }
+.top-nav{
+    background-color: var(--primaryColor);
+}
+.social a{
+    margin: 3px 5px;
+}
